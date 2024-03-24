@@ -25,9 +25,9 @@ class CurlApp(QtWidgets.QWidget):
         self.setLayout(layout)
 
     def send_request(self):
-        url = "http://192.168.1.195:11434/api/generate"
+        url = "http://url:port/api/generate"
         data = {
-            "model": "dolphin-mistral",
+            "model": "your-model-name",
             "prompt": self.messageInput.text()  # Utilisation du texte du QLineEdit comme prompt
         }
         self.messageHistory.append('You: ' + self.messageInput.text() + '\n')  # Ajout du message de l'utilisateur à l'historique des messages
