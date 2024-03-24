@@ -17,7 +17,15 @@ Ce projet est une application de chatbot développée en utilisant PyQt5. L'appl
 
 ## Utilisation
 
+Définir l'url, le port et le modèle du serveur Ollama.
+``` python
+url = "http://url:port/api/generate"
+"model": "your-model-name",
+```
+
+
 Pour exécuter l'application, utilisez la commande suivante :
 
 ```bash
 python3 app.py
+```
